@@ -553,12 +553,6 @@ In your project, you'll add gh-pages to the devDependencies.
 npm install --save-dev gh-pages
 ```
 
-We'll create the build, which will have all the compiled, static files.
-
-```bash
-npm run build
-```
-
 Finally, we'll deploy to gh-pages.
 
 ```bash
