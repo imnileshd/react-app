@@ -18,7 +18,7 @@ const TableBody = (props) => {
         <td>{row.title}</td>
         <td>{row.status}</td>
         <td>
-          <button onClick={() => props.deleteTask(index)}>Delete</button>
+          <button className="btn btn-danger" onClick={() => props.deleteTask(index)}>Delete</button>
         </td>
       </tr>
     );
@@ -31,7 +31,7 @@ class TasksTable extends Component {
   render() {
     const { tasks, deleteTask } = this.props;
     return (
-      <table>
+      <table class="table">
         <TableHeader />
         <TableBody tasks={tasks} deleteTask={deleteTask} />
       </table>

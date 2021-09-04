@@ -140,7 +140,7 @@ A component is an independent, reusable code block, which divides the UI into sm
 
 In React, Almost everything consists of components, which can be class components or simple components.
 
-Most React apps have many small components, and everything loads into the main `App` component. 
+Most React apps have many small components, and everything loads into the main `App` component.
 
 We'll create a new file called `App.js` and add `App` component here.
 
