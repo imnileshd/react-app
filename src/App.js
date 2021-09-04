@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import TasksTable from './components/TasksTable'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const tasks = [
+  {
+    title: 'Install',
+    status: 'Complete',
+  },
+  {
+    title: 'Create',
+    status: 'Complete',
+  },
+  {
+    title: 'Code',
+    status: 'Incomplete',
+  },
+  {
+    title: 'Deploy',
+    status: 'Incomplete',
+  },
+]
+
+class App extends Component {
+  state = {
+    tasks : tasks
+  }
+
+  deleteTask = (index) => {
+    const {tasks} = this.state
+    console.log(tasks)
+  
+    this.setState({
+      tasks: tasks.filter((task, i) => {
+        return i !== index
+      }),
+    })
+  }
+
+  render() {    
+    return (
+      <div className="container">
+        <TasksTable tasks={this.state.tasks} deleteTask={this.deleteTask}/>
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
