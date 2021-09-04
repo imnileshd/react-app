@@ -11,6 +11,15 @@ React is a remarkable JavaScript library that's taken the development community 
 
 One of the most important aspects of React is the fact that you can create components, which are like custom, reusable HTML elements, to quickly and efficiently build user interfaces.
 
+## Prerequisites
+
+There are a few things you should know in advance before you start with React. Here are what React prerequisites.
+
+- Basic familiarity with HTML & CSS.
+- Basic knowledge of JavaScript and programming.
+- Familiarity with ES6 syntax.
+- Node.js and npm installed globally .
+
 ## Setup and Installation
 
 We'll start by installing the project with create-react-app.
