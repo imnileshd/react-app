@@ -1,8 +1,10 @@
 # React: An Overview and Walkthrough with simple app
 
-## React
+React is a remarkable JavaScript library that's taken the development community by storm. Here, I'll introduce you to React and its fundamental concepts. We'll walk step-by-step through the process of building out a simple React application and its deployment.
 
-- React is a JavaScript library - one of the most popular.
+## Introduction
+
+- [React](https://reactjs.org/) is a JavaScript library - one of the most popular.
 - React is an open-source project created by Facebook.
 - React is used to build user interfaces (UI) on the front end.
 - React is the view layer of an MVC application (Model View Controller)
@@ -223,7 +225,7 @@ export default TasksTable
 Now load the `TasksTable` in `App.js` as below:
 
 ```js
-import TasksTable from './components/TasksTable'_
+import TasksTable from './components/TasksTable'
 ```
 
 Then by loading it into the `render()` of `App`, where before we had "Hello, React!". I also changed the class of the outer container.
@@ -272,6 +274,7 @@ const TableHeader = () => {
 Then the body.
 
 ```js
+// src/components/TasksTable.js
 const TableBody = () => {
   return (
     <tbody>
